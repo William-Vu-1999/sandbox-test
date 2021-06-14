@@ -1,0 +1,98 @@
+body
+  nav#mainNav.navbar.navbar-expand-lg.navbar-light
+    .container.px-4.px-lg-5
+      a.navbar-brand href="index.html"  Start Bootstrap
+      button.navbar-toggler aria-controls="navbarResponsive" aria-expanded="false" aria-label=("Toggle navigation") data-bs-target="#navbarResponsive" data-bs-toggle="collapse" type="button" 
+        | Menu
+        i.fas.fa-bars
+      #navbarResponsive.collapse.navbar-collapse
+        ul.navbar-nav.ms-auto.py-4.py-lg-0
+          li.nav-item
+            a.nav-link.px-lg-3.py-3.py-lg-4 href="index.html"  Home
+          li.nav-item
+            a.nav-link.px-lg-3.py-3.py-lg-4 href="about.html"  About
+          li.nav-item
+            a.nav-link.px-lg-3.py-3.py-lg-4 href="post.html"  Sample Post
+          li.nav-item
+            a.nav-link.px-lg-3.py-3.py-lg-4 href="contact.html"  Contact
+  /! Page Header
+  header.masthead style=("background-image: url('assets/img/contact-bg.jpg')") 
+    .container.position-relative.px-4.px-lg-5
+      .row.gx-4.gx-lg-5.justify-content-center
+        .col-md-10.col-lg-8.col-xl-7
+          .page-heading
+            h1 Contact Me
+            span.subheading Have questions? I have answers.
+  /! Main Content
+  main.mb-4
+    .container.px-4.px-lg-5
+      .row.gx-4.gx-lg-5.justify-content-center
+        .col-md-10.col-lg-8.col-xl-7
+          p Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!
+          .my-5
+            /! * * * * * * * * * * * * * * *
+            /! * * SB Forms Contact Form * *
+            /! * * * * * * * * * * * * * * *
+            /! This form is pre-integrated with SB Forms.
+            /! To make this form functional, sign up at
+            /! https://startbootstrap.com/solution/contact-forms
+            /! to get an API token!
+            form#contactForm data-sb-form-api-token="API_TOKEN" 
+              .form-floating
+                input#name.form-control data-sb-validations="required" placeholder=("Enter your name...") type="text" /
+                label for="name"  Name
+                .invalid-feedback data-sb-feedback="name:required"  A name is required.
+              .form-floating
+                input#email.form-control data-sb-validations="required,email" placeholder=("Enter your email...") type="email" /
+                label for="email"  Email address
+                .invalid-feedback data-sb-feedback="email:required"  An email is required.
+                .invalid-feedback data-sb-feedback="email:email"  Email is not valid.
+              .form-floating
+                input#phone.form-control data-sb-validations="required" placeholder=("Enter your phone number...") type="tel" /
+                label for="phone"  Phone Number
+                .invalid-feedback data-sb-feedback="phone:required"  A phone number is required.
+              .form-floating
+                textarea#message.form-control data-sb-validations="required" placeholder=("Enter your message here...") style=("height: 12rem") 
+                label for="message"  Message
+                .invalid-feedback data-sb-feedback="message:required"  A message is required.
+              br/
+              /! Submit success message
+              /!
+              /! This is what your users will see when the form
+              /! has successfully submitted
+              #submitSuccessMessage.d-none
+                .text-center.mb-3
+                  .fw-bolder Form submission successful!
+                  | To activate this form, sign up at
+                  br/
+                  a href="https://startbootstrap.com/solution/contact-forms"  https://startbootstrap.com/solution/contact-forms
+              /! Submit error message
+              /!
+              /! This is what your users will see when there is
+              /! an error submitting the form
+              #submitErrorMessage.d-none
+                .text-center.text-danger.mb-3 Error sending message!
+              /! Submit Button
+              button#submitButton.btn.btn-primary.text-uppercase.disabled type="submit"  Send
+  /! Footer
+  footer.border-top
+    .container.px-4.px-lg-5
+      .row.gx-4.gx-lg-5.justify-content-center
+        .col-md-10.col-lg-8.col-xl-7
+          ul.list-inline.text-center
+            li.list-inline-item
+              a href="#!" 
+                span.fa-stack.fa-lg
+                  i.fas.fa-circle.fa-stack-2x
+                  i.fab.fa-twitter.fa-stack-1x.fa-inverse
+            li.list-inline-item
+              a href="#!" 
+                span.fa-stack.fa-lg
+                  i.fas.fa-circle.fa-stack-2x
+                  i.fab.fa-facebook-f.fa-stack-1x.fa-inverse
+            li.list-inline-item
+              a href="#!" 
+                span.fa-stack.fa-lg
+                  i.fas.fa-circle.fa-stack-2x
+                  i.fab.fa-github.fa-stack-1x.fa-inverse
+          .small.text-center.text-muted.fst-italic Copyright © Your Website 2021
